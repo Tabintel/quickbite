@@ -27,8 +27,8 @@ export default function MenuPage() {
   const menuItems: MenuItem[] = [
     {
       id: "jollof-rice",
-      name: "Jollof Rice",
-      description: "Delicious West African rice dish cooked with tomatoes, peppers, and spices",
+      name: "Sharwama",
+      description: "Delicious Sharwama h tomatoes, peppers, and spices",
       price: 1500,
       image: "https://images.unsplash.com/photo-1633321702518-7feccafb94d5?q=80&w=1974&auto=format&fit=crop",
     },
@@ -41,8 +41,8 @@ export default function MenuPage() {
     },
     {
       id: "chicken-suya",
-      name: "Chicken Suya",
-      description: "Grilled chicken skewers marinated in spicy peanut mix",
+      name: "Noodles",
+      description: "Noodles with chicken skewers marinated in spicy peanut mix",
       price: 1800,
       image: "https://images.unsplash.com/photo-1626804475297-41608ea09aeb?q=80&w=2070&auto=format&fit=crop",
     },
@@ -61,7 +61,7 @@ export default function MenuPage() {
 
       // Create config with the selected item's price
       const config = {
-        public_key: process.env.NEXT_PUBLIC_FLW_PUBLIC_KEY || "FLWPUBK_TEST-b8bf15c0c8d88321574ccaecee9d1e63-X",
+        public_key: process.env.NEXT_PUBLIC_FLW_PUBLIC_KEY,
         tx_ref: Date.now().toString(),
         amount: item.price,
         currency: "NGN",
